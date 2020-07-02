@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "HolaMundo"
+    }
+  },
+  "defaultProject": "HolaMundo",
+  "cli": {
+    "analytics": "8724e815-cbf1-4229-9b38-e6ec21be6977"
+  }
 }
