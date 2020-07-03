@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'HolaMundo';
+  
+  listEstudiantes: any[] = [
+    { nombre: 'Lucas Rodriguez', estado: 'No Aprobado' },
+    { nombre: 'Maria Funes', estado: 'Aprobado' },
+    { nombre: 'Martin Perez', estado: 'No Aprobado' },
+  ];
+
 }
