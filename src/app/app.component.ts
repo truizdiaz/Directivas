@@ -13,6 +13,8 @@ export class AppComponent {
     { nombre: 'Lucas Rodriguez', estado: 'No Aprobado' },
     { nombre: 'Maria Funes', estado: 'Aprobado' },
     { nombre: 'Martin Perez', estado: 'No Aprobado' },
+    { nombre: 'Carlos Gomez', estado: 'Promocionado' },
+    { nombre: 'Juan Garcia', estado: 'No Aprobado' },
   ];
 
   btnToogle(): void {

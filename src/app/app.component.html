@@ -11,13 +11,23 @@
             <th>Estado</th>
         </thead>
         <tbody>
-            <tr *ngFor="let estudiante of listEstudiantes; let i=index">
+            <tr *ngFor="let estudiante of listEstudiantes; let i=index" [ngSwitch]="estudiante.estado">
                 <td>{{ i+1 }}</td>
                 <td>{{ estudiante.nombre }}</td>
                 <td>
-                    <span [ngClass] = "estudiante.estado === 'Aprobado' ? 'badge badge-primary' : 'badge badge-danger'">
+                    <span *ngSwitchCase="'Aprobado'" class="badge badge-primary">
                         {{ estudiante.estado }}
                     </span>
+                    <span *ngSwitchCase="'No Aprobado'" class="badge badge-danger">
+                        {{ estudiante.estado }}
+                    </span>
+                    <span *ngSwitchCase="'Promocionado'" class="badge badge-success">
+                        {{ estudiante.estado }}
+                    </span>
+                    <span *ngSwitchDefault class="badge badge-dark">
+                        {{ estudiante.estado }}
+                    </span>
+
                 </td>
             </tr>
         </tbody>
